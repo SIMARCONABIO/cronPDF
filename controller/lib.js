@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const moment = require('moment');
 
-const urlbase = 'http://ssig.conabio.gob.mx/symar/pdf';
+const urlbase = require('./.config.url')
 
 function mkdirSyncRecursive(directory) {
     return new Promise((resolve, reject) => {
