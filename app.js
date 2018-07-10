@@ -22,7 +22,7 @@ Day of Week: 0-6 (Sun-Sat)(Domingo-Sábado)
 //hora para generar el pdf para todos los domingos a las 11:59:00
 //             'second minutes hours Day Months Week'
 //             '00 59 11 * * 0'
-manager.add('simar', '0 0 12 * * 1', function () {
+manager.add('simar', '0 0 12 * * 0', function () {
     console.log('job simar generate pdf')
     let fecha = moment().format("DD/MM/YYYY")
     pdf.download(fecha)
